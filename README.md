@@ -35,11 +35,11 @@ Sometimes, Anna finds books by reading comments that other people have left on t
 
 - Resources:
     - Books
-        - [] Attributes:
+        - [x] Attributes:
             - title
             - description
             - publication_year
-        - [] Relationships:
+        - [x] Relationships:
             - Authors N-N
                 - SELF -> GET: /books/1/relationships/authors
                 - RELATED -> GET: /books/1/authors
@@ -51,14 +51,14 @@ Sometimes, Anna finds books by reading comments that other people have left on t
             - name
             - created_at
             - updated_at
-        - [] Relationships:
+        - [x] Relationships:
             - Books N-N
                 - SELF -> GET: /authors/1/relationships/books
                 - RELATED -> GET: /authors/1/books
     - Comments
-        - [] Attributes:
+        - [x] Attributes:
             - message
-        - [] Relationships:
+        - [x] Relationships:
             - Books 1-N
                 - SELF -> GET: /comments/1/relationships/books
                 - RELATED -> GET: /comments/1/books
@@ -66,11 +66,11 @@ Sometimes, Anna finds books by reading comments that other people have left on t
                 - SELF -> GET: /comments/1/relationships/books
                 - RELATED -> GET: /comments/1/books
     - Users
-        - [] Attributes:
+        - [x] Attributes:
             - username
             - email
             - password
-        - [] Relationships:
+        - [x] Relationships:
             - Comments 1-1
                 - SELF -> GET: /users/1/relationships/comments
                 - RELATED -> GET: /users/1/comments
